@@ -1,0 +1,260 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: gainsboro;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    background-color: #ffa2c9;
+}
+
+.navbar li {
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.navbar li:hover {
+    background-color: rgb(53, 24, 42);
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 70vh; /* Adjusted height */
+    object-fit: cover;
+}
+
+.logo img {
+    position: absolute;
+    left: 9%;
+    height: 12%; /* Adjusted size */
+    width: auto;
+    top: -10%;
+}
+
+.hero_txt h1 {
+    color: rgb(53, 24, 42);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 250;
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    font-size: 2.5rem;
+}
+
+.hero_txt h3 {
+    color: rgb(53, 24, 42);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    position: absolute;
+    top: 35%;
+    left: 7.5%;
+}
+
+.hero_txt h2 {
+    color: rgb(53, 24, 42);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    border: 2px solid rgb(53, 24, 42);
+    border-radius: 100px;
+    padding: 15px;
+    width: 10%;
+    text-align: center;
+}
+
+.hero_txt h2:hover {
+    background-color: rgb(53, 24, 42);
+    color: #fff;
+}
+
+/* Intro Section */
+.intro-section {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    margin: 1rem 0;
+}
+
+.intro-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.intro-section p {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+/* Options Section */
+.options-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.option {
+    flex: 1;
+    max-width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    background: white;
+}
+
+.option:hover {
+    transform: translateY(-10px);
+}
+
+.option img {
+    width: 100%;
+    height: 200px; /* Adjusted for consistent sizing */
+    object-fit: cover;
+}
+
+.option p {
+    font-size: 1rem;
+    color: #666;
+    margin: 1rem;
+}
+
+.discover-btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgb(53, 24, 42);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.discover-btn:hover {
+    background-color: #a10030;
+}
+
+/* Flight Deals Section */
+.flight-deals {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: gainsboro;
+}
+
+.flight-deals h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.deals-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.deal {
+    flex: 0 1 48%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deal:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.deal img {
+    width: 100%;
+    height: 250px; /* Adjusted for uniformity */
+    object-fit: cover;
+}
+
+.deal-text {
+    padding: 1rem;
+    color: #333;
+    text-align: left;
+}
+
+/* Footer */
+.footer {
+    background-color: #fff;
+    color: #333;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-social li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links li:hover, .footer-social a:hover {
+    color: #800020;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .option {
+        max-width: 48%;
+    }
+
+    .deal {
+        flex: 0 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .option {
+        max-width: 100%;
+    }
+
+    .deal {
+        flex: 0 1 100%;
+    }
+}
